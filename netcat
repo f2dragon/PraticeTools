@@ -1,0 +1,13 @@
+NetCat
+netcat ==> used to read and write data across network
+
+cmd > nc -nlvp 4444
+listening on port 4444
+n==> to skip dns resolution
+l==> listening
+v==>verbosity
+p==>port
+
+to communicate from other pc
+cmd > nc -nv ipaddress port 
+cmd> nc -nv ipaddress 4444
