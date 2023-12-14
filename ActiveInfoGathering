@@ -1,0 +1,41 @@
+Active info gathering
+
+
+DNS
+---
+
+to know ip address use host cmd
+cmd > host www.megacorp.com
+
+to automate
+-----------
+
+
+list.txt
+------
+www
+ftp
+mail
+router
+proxy
+
+
+cmd > for ip in $(cat list.txt) ; do host $ip.megacrop.com ; done
+
+for dnszone tansfer
+-----------------
+cmd > host -t ns websiteaddress.me 
+cmd > host -l websiteaddres.me nameserverwegotfromabovecmd
+
+(or)
+
+cmd > dig wesiteaddress.me -t ns
+cmd > dig axfr wesiteaddress.me @nameserver
+
+(or)
+
+cmd > dnsrecon -d websitedomain.com -t axfr
+
+Network Scanning
+------------------
+***nmap
